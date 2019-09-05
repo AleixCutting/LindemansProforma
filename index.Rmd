@@ -53,7 +53,7 @@ _**Proforma Lindemans Gr**_ {data-width=850}
 
 ```{r proforma}
 
-proforma <- read_excel("rooming.xlsx", sheet = "prof", range = "C12:H53") 
+proforma <- read_excel("rooming.xlsx", sheet = "prof", range = "C12:H55") 
 proforma <- sapply(proforma, as.character)
 proforma[is.na(proforma)] <- ""
 proforma <- data.frame(proforma, stringsAsFactors = FALSE)
